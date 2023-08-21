@@ -1,1 +1,19 @@
 
+.input {
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #274156;
+    border-radius: 50%;
+    cursor: pointer;
+  
+}
+.label {
+    margin-left:20px;
+    margin-right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    align-items: center;
+
+}

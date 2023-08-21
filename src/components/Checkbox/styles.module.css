@@ -1,0 +1,22 @@
+.container {
+ display: flex;
+ justify-content: flex-start;
+ padding: .5rem ;
+ align-items: center;
+}
+
+.container p {
+    margin-left:20px;
+    padding: 0;
+}
+.checkbox {
+    margin-left: 20px;
+    margin-top: 5px;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid #274156;
+    cursor: pointer;
+ 
+}

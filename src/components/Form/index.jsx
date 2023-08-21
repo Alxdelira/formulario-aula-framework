@@ -4,10 +4,12 @@ export default function Form({ children }) {
 
     return (
         <>
-            <div className={styles.container}>
-                <h1>Inscrição</h1>
+            <div className={styles.forme}>
+                <div className={styles.container}>
+                    <h1>Inscrição</h1>
+                </div>
+                {children}
             </div>
-            <div className={styles.forme}>{children}</div>
         </>
     )
 
