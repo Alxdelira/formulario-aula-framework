@@ -1,0 +1,18 @@
+.th {
+  border: 1px solid #1c6e8c;
+  padding: .5rem;
+  color: #f7f8f8;
+  background-color: #073546;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}

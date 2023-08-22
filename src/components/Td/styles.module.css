@@ -1,0 +1,17 @@
+.td {
+  text-align: center;
+  border: 1px solid #1c6e8c;
+  padding: .5rem;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}

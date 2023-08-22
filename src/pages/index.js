@@ -11,6 +11,12 @@ import Radio from '@/components/Radio';
 import Select from '@/components/Select';
 import TextArea from '@/components/TextArea';
 import Head from 'next/head';
+import Thead from '@/components/Thead';
+import Table from '@/components/Table';
+import Tr from '@/components/Tr';
+import Th from '@/components/Th';
+import Tbody from '@/components/Tbody';
+import Td from '@/components/Td';
 
 export default function Home() {
   const [nome, setNome] = useState('');
@@ -26,7 +32,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Criar Aplicativo Next</title>
+        <title>Formulario</title>
         <meta name="description" content="Gerado pelo aplicativo create next" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
@@ -69,7 +75,7 @@ export default function Home() {
               Feminino
             </Radio>
           </GroupForm>
-          <Label htmlFor="curso">Curso</Label>
+          <Label htmlFor="curso">Curso:</Label>
           <Select value={curso} onChange={(e) => setCurso(e.target.value)}>
             <Option value={""}>Selecione um curso</Option>
             <Option value={"Html e Css"}>Html e Css</Option>
@@ -105,30 +111,31 @@ export default function Home() {
           >Realizar Inscrição</Button>
         </Form>
       </Container>
-      <table>
-        <thead>
-          <tr>
-            <th>Nome</th>
-            <th>Email</th>
-            <th>Sexo</th>
-            <th>Curso</th>
-            <th>Atendimento</th>
-            <th>Termos</th>
-          </tr>
-        </thead>
-        <tbody>
+      <Table>
+        <Thead>
+          <Tr>
+            <Th>Nome</Th>
+            <Th>Email</Th>
+            <Th>Sexo</Th>
+            <Th>Curso</Th>
+            <Th>Atendimento</Th>
+            <Th>Termos</Th>
+          </Tr>
+        </Thead>
+    
+        <Tbody>
           {inscricoes.map((inscricao, index) => (
-            <tr key={index}>
-              <td>{inscricao.nome}</td>
-              <td>{inscricao.email}</td>
-              <td>{inscricao.sexo}</td>
-              <td>{inscricao.curso}</td>
-              <td>{inscricao.atendimento}</td>
-              <td>{inscricao.termos ? 'Sim' : 'Não'}</td>
-            </tr>
+            <Tr key={index}>
+              <Td>{inscricao.nome}</Td>
+              <Td>{inscricao.email}</Td>
+              <Td>{inscricao.sexo}</Td>
+              <Td>{inscricao.curso}</Td>
+              <Td>{inscricao.atendimento}</Td>
+              <Td>{inscricao.termos ? 'Sim' : 'Não'}</Td>
+            </Tr>
           ))}
-        </tbody>
-      </table>
+        </Tbody>
+      </Table>
     </>
   );
 }

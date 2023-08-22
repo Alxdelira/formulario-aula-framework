@@ -1,0 +1,10 @@
+.table {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #1c6e8c;
+  border-collapse: collapse;
+  margin: .3rem;
+  overflow-x: scroll;
+  font-family: "Inter",sans-serif;
+  font-size: 14px;
+}
